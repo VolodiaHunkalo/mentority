@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919977140084",
+    "project_id": "mentority-17a3b",
+    "storage_bucket": "mentority-17a3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919977140084:android:009953680822f4d4ee5621",
+        "android_client_info": {
+          "package_name": "com.example.mentority"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919977140084-l4rl95547t73t80mqq0fo7npq4uqjp90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7zFiO7Awsk0EaDg2gxk_VNOXnn31X6wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919977140084-l4rl95547t73t80mqq0fo7npq4uqjp90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
