@@ -2,13 +2,14 @@ class Mentor {
   final int id, price;
   final String title, description, image;
 
-  Mentor({required this.id, required this.price, required this.title, required this.description, required this.image});
+  Mentor({required this.id, required this.price, required this.title, required this.description, required this.image, required int idUser});
 }
 
 List<Mentor> mentors = [
   Mentor(
       id: 1,
       price: 5000,
+      idUser: 1,
       title: "Elon Musk",
       image: "assets/images/Screenshot_2022-06-15_at_15.39.42-removebg-preview.png",
       description:
@@ -17,6 +18,7 @@ List<Mentor> mentors = [
   Mentor(
       id: 4,
       price: 10000,
+      idUser: 2,
       title: "Gary Vee",
       image: "assets/images/Screenshot_2022-06-15_at_15.34.46-removebg-preview.png",
       description:
@@ -25,6 +27,7 @@ List<Mentor> mentors = [
   Mentor(
       id: 9,
       price: 8999,
+      idUser: 3,
       title: "Warren Buffett",
       image: "assets/images/Screenshot_2022-06-15_at_15.38.16-removebg-preview.png",
       description:
