@@ -19,7 +19,6 @@ return {
   'fullname' : fullname,
   'email' : email,
   'profilepic' : profilepic,
-}
+};
   }
     }
-      }
