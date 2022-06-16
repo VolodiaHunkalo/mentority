@@ -2,13 +2,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mentority/screens/auth/LoginPage.dart';
-import 'package:mentority/screens/mentors/mentors_screen.dart';
-
 import 'constants.dart';
 
 void main() async{
-  // await Firebase.initializeApp();
-  // WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 

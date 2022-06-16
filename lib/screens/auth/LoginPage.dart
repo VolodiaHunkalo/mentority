@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mentority/screens/auth/widgets/LoginBottomNavyBar.dart';
+import 'package:mentority/screens/auth/widgets/LoginPageBody.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -11,17 +14,11 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                Text('Mentority')
-              ],
-            ),
-          ),
-        ),
-      ),
+      body: LoginPageBody(),
+      bottomNavigationBar: LoginBottomNavyBar(),
     );
   }
 }
+
+
+
