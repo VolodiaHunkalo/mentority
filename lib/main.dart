@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mentority/screens/auth/LoginPage.dart';
+import 'package:mentority/screens/auth/SignUpPage.dart';
 import 'constants.dart';
 
 void main() async{
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const LoginPage(),
+      home: const SignUpPage(),
     );
   }
 }
