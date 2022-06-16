@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -6,7 +7,7 @@ import '../../constants.dart';
 import 'body.dart';
 
 class MentorsScreen extends StatelessWidget {
-  const MentorsScreen({Key? key}) : super(key: key);
+  const MentorsScreen({Key? key, required User firebaseUser}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

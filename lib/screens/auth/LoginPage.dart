@@ -2,9 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mentority/models/user.dart';
 import 'package:mentority/screens/auth/widgets/LoginBottomNavyBar.dart';
 import 'package:mentority/screens/mentors/mentors_screen.dart';
+
+import '../../models/user.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -49,6 +50,10 @@ class _LoginPageState extends State<LoginPage> {
           .fromMap(userData.data() as Map<String, dynamic>);
 
       print('LogIn Successful!');
+
+      Navigator.push(context, MaterialPageRoute(builder: (context) =>
+      MentorsScreen(firebaseUser: credential.user!)
+      ));
 
     }
   }

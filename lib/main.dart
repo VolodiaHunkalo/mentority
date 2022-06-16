@@ -1,9 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mentority/screens/auth/LoginPage.dart';
-import 'package:mentority/screens/auth/SignUpPage.dart';
+import 'package:mentority/screens/mentors/mentors_screen.dart';
 import 'constants.dart';
+import 'models/user.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const SignUpPage(),
+      home: const LoginPage(),
     );
   }
 }
